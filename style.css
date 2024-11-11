@@ -76,7 +76,39 @@ body {
 }
 
 
+h1 {
+    font-size: 2rem; /* يتغير بناءً على حجم الخط الأساسي في الصفحة */
+}
+section {
+    width: 80vw; /* 80% من عرض الشاشة */
+    height: 50vh; /* 50% من ارتفاع الشاشة */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    flex: 1 1 200px; /* يتوسع حتى يصل لعرض 200px كحد أدنى */
+    margin: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+/* التصميم الأساسي للجوال */
+.container {
+    font-size: 14px;
+    padding: 10px;
+}
 
+/* تحسين التصميم للأجهزة المكتبية */
+@media (min-width: 1024px) {
+    .container {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
 
 
 
