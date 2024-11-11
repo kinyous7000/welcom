@@ -8,7 +8,7 @@
 	padding: 0;
 }
 body{
-	background: linear-gradient(45deg, #ff007f, #ff9900);
+	background:#ff007f;
 	height: 200vh;
 	font-family: system-ui;
 	
@@ -57,7 +57,13 @@ p{
 	
 
 }
-
+background: repeating-linear-gradient(
+    45deg,
+    #ff007f,
+    #ff007f 10px,
+    #ff9900 10px,
+    #ff9900 20px
+);
 
 /* التصميم الافتراضي للأجهزة المكتبية */
 body {
