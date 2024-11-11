@@ -53,6 +53,27 @@ p{
 
 }
 
+/* التصميم الافتراضي للأجهزة المكتبية */
+body {
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* تعديل التصميم لأجهزة الهواتف الصغيرة */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* تعديل التصميم للأجهزة الأكبر حجمًا */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
 
 
 
