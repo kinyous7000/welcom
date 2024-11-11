@@ -1,3 +1,8 @@
+.super-effect {
+    background: #ff007f;
+    mix-blend-mode: screen;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -47,7 +52,7 @@ header ul li a:hover , .active{
 	width: 100%;
 }
 p{
-	background-color: linear-gradient(45deg, #ff007f, #ff9900);
+	background-color: #ff9900;
 	position: sticky;
 	
 
