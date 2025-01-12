@@ -2,7 +2,17 @@
 	margin: 0;
 	padding: 0;
 }
+/* الشاشات الكبيرة */
+body {
+  font-size: 18px;
+}
 
+/* الشاشات الصغيرة (مثل الهواتف) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
 body {
   background: linear-gradient(135deg, #ff6ec7, #ffc600, #00c6ff, #7b2ff7); /* تدرج ألوان نابض بالحياة */
   background-size: 400% 400%; /* تحريك الخلفية */
@@ -41,7 +51,7 @@ header{
 	margin: 30px;
 }
 header .logo{
-	font-size: 30px;
+	/* font-size: 30px;
 	text-transform: uppercase;	
 }
 header ul{
