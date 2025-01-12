@@ -17,7 +17,7 @@
 
 
 		
-			<script>
+		<script>
   const countdownDate = new Date("Jan 15, 2025 00:00:00").getTime();
   const x = setInterval(function() {
     const now = new Date().getTime();
@@ -26,14 +26,18 @@
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    document.getElementById("timer").innerHTML = `
+      <span>${days}d</span>
+      <span>${hours}h</span>
+      <span>${minutes}m</span>
+      <span>${seconds}s</span>
+    `;
     if (distance < 0) {
       clearInterval(x);
       document.getElementById("timer").innerHTML = "We're Back!";
     }
   }, 1000);
 </script>
-<div id="timer"></div>
 
 
 
