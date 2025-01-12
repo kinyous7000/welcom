@@ -52,7 +52,28 @@ p{
 	
 
 }
+#timer {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #007bff; /* لون الخلفية */
+  padding: 20px;
+  border-radius: 10px; /* زوايا مستديرة */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل */
+  width: fit-content;
+  margin: 50px auto; /* مركزية العنصر */
+}
 
+#timer span {
+  display: inline-block;
+  margin: 0 5px; /* مسافات بين العناصر */
+  padding: 5px 10px;
+  background-color: #0056b3; /* لون أغمق لكل جزء */
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
 
 
 
